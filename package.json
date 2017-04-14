@@ -1,6 +1,6 @@
 {
   "name": "express-anti-chain",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "Anti chain middleware for express",
   "main": "index.js",
   "scripts": {
@@ -12,5 +12,12 @@
     "middleware"
   ],
   "author": "Dengpan Deng",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pandashuai/express-anti-chain.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pandashuai/express-anti-chain/issues"
+  }
 }
