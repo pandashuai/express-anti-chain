@@ -1,0 +1,16 @@
+{
+  "name": "express-anti-chain",
+  "version": "1.0.0",
+  "description": "Anti chain middleware for express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express",
+    "anti-chain",
+    "middleware"
+  ],
+  "author": "Dengpan Deng",
+  "license": "ISC"
+}

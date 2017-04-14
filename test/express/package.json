@@ -1,0 +1,26 @@
+{
+  "name": "express-anti-chain-test",
+  "version": "0.0.1",
+  "description": "Anti chain example with express",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm install && node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pandashuai/express-anti-chain.git"
+  },
+  "keywords": [
+    "anti-chain"
+  ],
+  "author": "lellansin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pandashuai/express-anti-chain/issues"
+  }
+}

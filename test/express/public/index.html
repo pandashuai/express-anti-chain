@@ -1,0 +1,14 @@
+<html>
+	<head>
+		<meta charset="UTF-8" >
+		<title>Anti chain Test</title>
+	</head>
+	<body>
+		<h1>We don't want the pictrue be refer by third website while We didn't know.</h1>
+		<p>You can drag the picture to a new window to see, you will find that you can not get the correct picture, because the strict parameter is set to true</p>
+		<img src="/images/test.png">
+		<p>you will find it's ok by <a href="http://localhost:8000/">http://localhost:8000/</a></p>
+		<p>But on <a href="http://127.0.0.1:8000/">http://127.0.0.1:8000/</a> the pictrue could not be load, cause it's not on the white list.</p>
+		
+	</body>
+</html>

@@ -1,35 +1,22 @@
-express-anti-chain
-==================
-
-Anti chain for express website.
-
-Quick Start
------------
-
-```
 var express = require('express');
 var path = require('path');
 var app = express();
-var anti = require('express-anti-chain');
+var anti = require('../../index.js');
 app.use(anti({
   // The whitelist that allows the referenced domain name is simple and regular
   ignore: ['localhost:*'],
-
   // Anti-theft chain type
   exts: ['.png', '.jpg', '.jpeg', '.gif', '.swf', '.flv'],
-
-  // Anti-theft chain default to the picture  ---- or default: '/images/default.png',
+  // Anti-theft chain default to the picture
   default: {
     images: '/images/default.png'
   },
-
-  // The strict parameter determines whether direct access is blocked
   strict: true,
-
-  // Print the log file ---- or log: console.log,
+  // log: console.log,
+  // or you can use your own
   log: function(url, referer, req){
     console.log('request :' + url + ' from ' + referer + ' was blocked');
-  }
+  },
   
 }));
 
@@ -44,5 +31,3 @@ app.get('/', function(req, res) {
 app.listen(app.get('port'), function() {
   console.log("Express test server listening on http://localhost:" + app.get('port'));
 });
-
-```
